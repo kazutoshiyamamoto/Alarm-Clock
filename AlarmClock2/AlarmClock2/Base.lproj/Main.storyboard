@@ -59,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="476" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting View Controller-->
         <scene sceneID="7iK-oj-5aK">
             <objects>
-                <viewController id="Btr-5l-sBY" sceneMemberID="viewController">
+                <viewController id="Btr-5l-sBY" customClass="SettingViewController" customModule="AlarmClock2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uJ2-rJ-poG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

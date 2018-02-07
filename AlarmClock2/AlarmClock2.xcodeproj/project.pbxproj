@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD2881D9202B35C800504AC9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2881D8202B35C800504AC9 /* SettingViewController.swift */; };
 		FD8B02E52029A5F300484787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B02E42029A5F300484787 /* AppDelegate.swift */; };
 		FD8B02E72029A5F300484787 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B02E62029A5F300484787 /* ViewController.swift */; };
 		FD8B02EA2029A5F300484787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD8B02E82029A5F300484787 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD2881D8202B35C800504AC9 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		FD8B02E12029A5F300484787 /* AlarmClock2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClock2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8B02E42029A5F300484787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD8B02E62029A5F300484787 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				FD8B02E42029A5F300484787 /* AppDelegate.swift */,
 				FD8B02E62029A5F300484787 /* ViewController.swift */,
 				FD8B02E82029A5F300484787 /* Main.storyboard */,
+				FD2881D8202B35C800504AC9 /* SettingViewController.swift */,
 				FD8B02EB2029A5F300484787 /* Assets.xcassets */,
 				FD8B02ED2029A5F300484787 /* LaunchScreen.storyboard */,
 				FD8B02F02029A5F300484787 /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				FD8B02E72029A5F300484787 /* ViewController.swift in Sources */,
 				FD8B02E52029A5F300484787 /* AppDelegate.swift in Sources */,
+				FD2881D9202B35C800504AC9 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
