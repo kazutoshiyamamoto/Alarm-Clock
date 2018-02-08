@@ -32,6 +32,9 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I7w-WB-6XO">
                                 <rect key="frame" x="163" y="420" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchButtonAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="x6N-Wd-Zub"/>
+                                </connections>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -49,9 +52,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="fb0-zT-CBw">
-                        <barButtonItem key="rightBarButtonItem" title="時刻設定" id="SJ6-cA-gbd"/>
+                        <barButtonItem key="rightBarButtonItem" title="時刻設定" id="SJ6-cA-gbd">
+                            <connections>
+                                <action selector="settingButtonAction:" destination="BYZ-38-t0r" id="xCa-2R-vqV"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="alarmLabel" destination="6Qu-YK-W3g" id="nzu-I5-Zo4"/>
                         <segue destination="Btr-5l-sBY" kind="show" identifier="goSetting" id="ZwZ-Qc-Hfv"/>
                     </connections>
                 </viewController>
@@ -81,6 +89,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="決定"/>
+                                <connections>
+                                    <action selector="decisionButtonAction:" destination="Btr-5l-sBY" eventType="touchUpInside" id="HjH-Ej-JI2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -98,6 +109,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jot-ZZ-Ia9"/>
                     </view>
+                    <connections>
+                        <outlet property="alarmSettingPicker" destination="cTp-FB-azl" id="a2m-UQ-rRl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Mf-B8-Vs0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
