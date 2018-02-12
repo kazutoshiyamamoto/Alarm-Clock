@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingViewController: UIViewController {
+class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,9 @@ class SettingViewController: UIViewController {
     }
     
 
-    @IBOutlet weak var alarmSettingPicker: UIDatePicker!
+
+    @IBAction func alarmSettingPicker(_ sender: Any) {
+    }
     
     @IBAction func decisionButtonAction(_ sender: Any) {
     }

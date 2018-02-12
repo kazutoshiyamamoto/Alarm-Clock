@@ -84,6 +84,9 @@
                                 <date key="date" timeIntervalSinceReferenceDate="540138213.83937001">
                                     <!--2018-02-12 14:23:33 +0000-->
                                 </date>
+                                <connections>
+                                    <action selector="alarmSettingPicker:" destination="Btr-5l-sBY" eventType="valueChanged" id="BeD-LH-UaU"/>
+                                </connections>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9M-YO-sCo">
                                 <rect key="frame" x="167" y="436" width="41" height="70"/>
@@ -112,9 +115,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jot-ZZ-Ia9"/>
                     </view>
-                    <connections>
-                        <outlet property="alarmSettingPicker" destination="kNP-GG-L9A" id="3dq-kT-IUP"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Mf-B8-Vs0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
