@@ -79,13 +79,16 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTp-FB-azl">
-                                <rect key="frame" x="0.0" y="164" width="375" height="216"/>
-                            </pickerView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="kNP-GG-L9A">
+                                <rect key="frame" x="0.0" y="203" width="375" height="191"/>
+                                <date key="date" timeIntervalSinceReferenceDate="540138213.83937001">
+                                    <!--2018-02-12 14:23:33 +0000-->
+                                </date>
+                            </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9M-YO-sCo">
-                                <rect key="frame" x="138" y="435" width="98" height="70"/>
+                                <rect key="frame" x="167" y="436" width="41" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="sQL-9u-dE7"/>
+                                    <constraint firstAttribute="height" constant="70" id="aQw-ak-b7f"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="決定"/>
@@ -96,21 +99,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="45o-ee-TC2" firstAttribute="leading" secondItem="cTp-FB-azl" secondAttribute="leading" id="8wL-td-iC7"/>
-                            <constraint firstItem="U9M-YO-sCo" firstAttribute="leading" secondItem="Jot-ZZ-Ia9" secondAttribute="leading" constant="138" id="93O-iH-BjU"/>
+                            <constraint firstItem="Jot-ZZ-Ia9" firstAttribute="bottom" secondItem="U9M-YO-sCo" secondAttribute="bottom" constant="161" id="5ud-Oe-HJM"/>
+                            <constraint firstItem="U9M-YO-sCo" firstAttribute="top" secondItem="kNP-GG-L9A" secondAttribute="bottom" constant="42" id="CUE-51-B1B"/>
                             <constraint firstItem="45o-ee-TC2" firstAttribute="bottom" secondItem="Jot-ZZ-Ia9" secondAttribute="bottom" id="EgD-ue-6eb"/>
                             <constraint firstItem="45o-ee-TC2" firstAttribute="top" secondItem="Jot-ZZ-Ia9" secondAttribute="top" id="Gqt-6q-rHr"/>
-                            <constraint firstItem="cTp-FB-azl" firstAttribute="top" secondItem="Jot-ZZ-Ia9" secondAttribute="top" constant="100" id="L2r-XO-Ptf"/>
-                            <constraint firstItem="U9M-YO-sCo" firstAttribute="centerX" secondItem="cTp-FB-azl" secondAttribute="centerX" id="PIr-GY-ddt"/>
-                            <constraint firstItem="45o-ee-TC2" firstAttribute="trailing" secondItem="cTp-FB-azl" secondAttribute="trailing" id="fAL-HS-coD"/>
+                            <constraint firstItem="kNP-GG-L9A" firstAttribute="trailing" secondItem="45o-ee-TC2" secondAttribute="trailing" id="ZoA-Ps-2fz"/>
+                            <constraint firstItem="kNP-GG-L9A" firstAttribute="leading" secondItem="45o-ee-TC2" secondAttribute="leading" id="aC6-d0-eET"/>
+                            <constraint firstItem="kNP-GG-L9A" firstAttribute="top" secondItem="Jot-ZZ-Ia9" secondAttribute="top" constant="139" id="cIP-xU-F02"/>
                             <constraint firstItem="45o-ee-TC2" firstAttribute="leading" secondItem="uJ2-rJ-poG" secondAttribute="leading" id="gWh-MA-fH6"/>
+                            <constraint firstItem="U9M-YO-sCo" firstAttribute="centerX" secondItem="45o-ee-TC2" secondAttribute="centerX" id="gsX-fp-w77"/>
                             <constraint firstAttribute="trailing" secondItem="45o-ee-TC2" secondAttribute="trailing" id="lFT-1u-GYe"/>
-                            <constraint firstItem="U9M-YO-sCo" firstAttribute="top" secondItem="cTp-FB-azl" secondAttribute="bottom" constant="55" id="xLH-af-rEc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jot-ZZ-Ia9"/>
                     </view>
                     <connections>
-                        <outlet property="alarmSettingPicker" destination="cTp-FB-azl" id="a2m-UQ-rRl"/>
+                        <outlet property="alarmSettingPicker" destination="kNP-GG-L9A" id="3dq-kT-IUP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Mf-B8-Vs0" userLabel="First Responder" sceneMemberID="firstResponder"/>

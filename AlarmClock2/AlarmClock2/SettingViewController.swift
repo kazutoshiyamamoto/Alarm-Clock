@@ -21,7 +21,8 @@ class SettingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var alarmSettingPicker: UIPickerView!
+
+    @IBOutlet weak var alarmSettingPicker: UIDatePicker!
     
     @IBAction func decisionButtonAction(_ sender: Any) {
     }
