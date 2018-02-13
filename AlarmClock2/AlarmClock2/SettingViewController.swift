@@ -10,6 +10,11 @@ import UIKit
 
 class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    
+    // 設定値を覚えるキーを設定
+    let settingKey = "alarm_value"
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
