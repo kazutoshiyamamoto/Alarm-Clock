@@ -34,8 +34,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var alarmLabel: UILabel!
     
     @IBAction func settingButtonAction(_ sender: Any) {
+        // アラームをアンラップしてnowTimerに代入
+        if let nowTimer = timer {
+            // もしアラームが、実行中だったら停止
+            if nowTimer.isValid == true {
+                // アラーム停止
+                nowTimer.invalidate()
+            }
+        }
+        // 画面遷移を行う
+        performSegue(withIdentifier: "goSetting", sender: nil)
     }
     
     @IBAction func switchButtonAction(_ sender: Any) {
     }
 }
+
+
