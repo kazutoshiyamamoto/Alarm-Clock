@@ -79,11 +79,12 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="kNP-GG-L9A">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="15" translatesAutoresizingMaskIntoConstraints="NO" id="kNP-GG-L9A">
                                 <rect key="frame" x="0.0" y="203" width="375" height="191"/>
                                 <date key="date" timeIntervalSinceReferenceDate="540138213.83937001">
                                     <!--2018-02-12 14:23:33 +0000-->
                                 </date>
+                                <locale key="locale" localeIdentifier="ja"/>
                                 <connections>
                                     <action selector="alarmSettingPicker:" destination="Btr-5l-sBY" eventType="valueChanged" id="BeD-LH-UaU"/>
                                 </connections>

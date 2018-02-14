@@ -50,4 +50,10 @@ class ViewController: UIViewController {
     }
 }
 
-
+// 画面切り替えのタイミングで処理を行なう
+override func viewDidAppear(_ animated: Bool) {
+    // カウント(経過時間)をゼロにする
+    count = 0
+    // アラームの表示を更新する
+    _ = displayUpdate()
+}
