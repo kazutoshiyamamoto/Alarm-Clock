@@ -21,9 +21,10 @@ class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         // Do any additional setup after loading the view.
     }
 
-    // DatePickerのデリゲートとデータソースの通知先を設定
-    datePicker.delegate = self
-    datePicker.dataSource = self
+    // alarmSettingPickerのデリゲートになる
+    alarmSettingPicker.delegate = self
+    // alarmSettingPickerのデータソースになる
+    alarmSettingPicker.dataSource = self
     
     // UserDefaultsの取得
     let settings = UserDefaults.standard
@@ -37,9 +38,28 @@ class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
 
 
     @IBAction func alarmSettingPicker(_ sender: Any) {
+        
+        let calendar = Calendar.current
+        let date = Date()
+        
+        // 明日の日付を取得
+        let day_tomorrow = calendar.date(
+            byadding: .day, value 1, to: calendar.startOfDay(for: date))
+        // 昨日の日付を取得
+        let day_yesterday = calendar.date(
+            byadding: .day, value -1, to: calendar.startOfDay(for: date))
+        
+        // 現在の日付を取得
+        let date :Date =Date()
+        
+        // 日付のフォーマットを指定する
+        let format = DateFormatter()
+        format.dateFormat = "yyyy/MM/dd"
+        
     }
     
     @IBAction func decisionButtonAction(_ sender: Any) {
+        Label.text = "\(Picker.date)"
     }
     
 
